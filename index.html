@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gummi Bears Daily Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐻 Ежедневник с мишками Гамми 🍯</h1>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск вместе с медведями Гамми...">
+            <button class="search-button" onclick="performSearch()">Поиск</button>
+            <ul class="suggestions" id="suggestions"></ul>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="date" id="currentDate"></div>
+                <h2>📝 Today's Tasks</h2>
+                <input type="text" id="taskInput" placeholder="Add new task...">
+                <button class="add-button" onclick="addTask()">Add Task</button>
+                <ul class="task-list" id="taskList"></ul>
+            </div>
+
+            <div class="card">
+                <h2>🛒 Grocery List</h2>
+                <input type="text" id="groceryInput" placeholder="Add grocery item...">
+                <button class="add-button" onclick="addGrocery()">Add Item</button>
+                <ul class="grocery-list" id="groceryList"></ul>
+            </div>
+
+            <div class="card">
+                <h2>🧹 Cleaning Schedule</h2>
+                <div class="cleaning-schedule">
+                    <div class="day">
+                        <h3>Monday</h3>
+                        <input type="text" id="mondayInput" placeholder="Add cleaning task...">
+                        <button class="add-button" onclick="addCleaningTask('monday')">Add Task</button>
+                        <ul class="cleaning-list" id="mondayList"></ul>
+                    </div>
+                    <div class="day">
+                        <h3>Tuesday</h3>
+                        <input type="text" id="tuesdayInput" placeholder="Add cleaning task...">
+                        <button class="add-button" onclick="addCleaningTask('tuesday')">Add Task</button>
+                        <ul class="cleaning-list" id="tuesdayList"></ul>
+                    </div>
+                    <div class="day">
+                        <h3>Wednesday</h3>
+                        <input type="text" id="wednesdayInput" placeholder="Add cleaning task...">
+                        <button class="add-button" onclick="addCleaningTask('wednesday')">Add Task</button>
+                        <ul class="cleaning-list" id="wednesdayList"></ul>
+                    </div>
+                    <div class="day">
+                        <h3>Thursday</h3>
+                        <input type="text" id="thursdayInput" placeholder="Add cleaning task...">
+                        <button class="add-button" onclick="addCleaningTask('thursday')">Add Task</button>
+                        <ul class="cleaning-list" id="thursdayList"></ul>
+                    </div>
+                    <div class="day">
+                        <h3>Friday</h3>
+                        <input type="text" id="fridayInput" placeholder="Add cleaning task...">
+                        <button class="add-button" onclick="addCleaningTask('friday')">Add Task</button>
+                        <ul class="cleaning-list" id="fridayList"></ul>
+                    </div>
+                    <div class="day">
+                        <h3>Saturday</h3>
+                        <input type="text" id="saturdayInput" placeholder="Add cleaning task...">
+                        <button class="add-button" onclick="addCleaningTask('saturday')">Add Task</button>
+                        <ul class="cleaning-list" id="saturdayList"></ul>
+                    </div>
+                    <div class="day">
+                        <h3>Sunday</h3>
+                        <input type="text" id="sundayInput" placeholder="Add cleaning task...">
+                        <button class="add-button" onclick="addCleaningTask('sunday')">Add Task</button>
+                        <ul class="cleaning-list" id="sundayList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
